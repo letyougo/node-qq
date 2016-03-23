@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Chating</title>
+
+</head>
+<body>
+<div id="react-modules"></div>
+<div id="backbone-modules"></div>
+<script src="/socket.io/socket.io.js"></script>
+<label>你好:<%=myself.username%></label>
+</body>
+<script>
+    var myself ={
+        username:'<%= myself.username%>',
+        id:'<%= myself._id%>'
+    }
+
+</script>
+<script src="/js/bundle.js"></script>
+</html>
